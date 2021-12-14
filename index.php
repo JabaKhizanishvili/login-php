@@ -22,17 +22,20 @@
                     <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-circle"></i></span>
                     <input type="text" class="form-control" name="user" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
                 </div>
-
-
+                <?php
+                if (isset($_GET['errors']['user'])) { ?>
+                    <p style="color:red;" class="mb-3"><?= $_GET["errors"]['user']; ?></p>
+                <?php
+                } ?>
             </div>
             <div class="col-12">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="fas fa-unlock-alt"></i></span>
-                    <input type="text" class="form-control" name="pass" placeholder="pass" aria-label="Username" aria-describedby="basic-addon1" required>
+                    <input type="password" class="form-control" name="pass" placeholder="password" aria-label="Username" aria-describedby="basic-addon1" required>
                 </div>
                 <?php
-                if (isset($_GET['error'])) { ?>
-                    <p style="color:red;" class="mb-3"><?= $_GET["error"]; ?></p>
+                if (isset($_GET['errors']['pass'])) { ?>
+                    <p style="color:red;" class="mb-3"><?= $_GET["errors"]['pass']; ?></p>
                 <?php
                 } ?>
             </div>
