@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lato:wght@700&family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bakbak One', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: #edf6f9;
+    height: 100vh;
+}
